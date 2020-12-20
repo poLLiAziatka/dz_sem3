@@ -10,3 +10,5 @@ class User(SqlAlchemyBase):
     email = sa.Column(sa.String, unique=True)
 
     news = orm.relation("News", back_populates='user')
+
+''''''
